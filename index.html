@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+           #answer
+           {
+               width: 160;
+           }
+        </style>
+        <script type="text/javascript">
+            function diplay(n1)
+            {
+                calculator.out.value=n1;
+            }
+        </script>
+    </head>
+    <body>
+    <form name=calculator >
+        <h3 align=center>CALCULATOR</h3>
+        <table border="0" align="center">
+            <tr>
+                <td colspan="4">
+                    <input id="answer" style="border-color: lightcoral; text-align: right;" type="text" name="out" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="nine" value=9 onclick="calculator.out.value +='9'">
+                </td>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="eight" value=8 onclick="calculator.out.value +='8'">
+                </td>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="seven" value=7 onclick="calculator.out.value +='7'">
+                </td>
+                <td>
+                    <input style="background-color:rgb(243, 4, 148);" type="button" name="add" value=+ onclick="calculator.out.value +='+'">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="six" value=6 onclick="calculator.out.value +='6'">
+                </td>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="five" value=5 onclick="calculator.out.value +='5'">
+                </td>
+                <td>
+                    <input style="background-color: lightskyblue;" type="button" name="four" value=4 onclick="calculator.out.value +='4'">
+                </td>
+                <td>
+                    <input style="background-color:rgb(243, 4, 148);" type="button" name="sub" value=- onclick="calculator.out.value +='-'">
+                </td>
+                <tr>
+                    <td>
+                        <input style="background-color: lightskyblue;" type="button" name="three" value=3 onclick="calculator.out.value +='3'"">
+                    </td>
+                    <td>
+                        <input style="background-color: lightskyblue;" type="button" name="two" value=2 onclick="calculator.out.value +='2'">
+                    </td>
+                    <td>
+                        <input style="background-color: lightskyblue;" type="button" name="one" value=1 onclick="calculator.out.value +='1'">
+                    </td>
+                    <td>
+                        <input style="background-color:rgb(243, 4, 148);" type="button" name="mul" value=* onclick="calculator.out.value +='*'">
+                    </td>
+                    <tr>
+                        <td>
+                            <input style="background-color: lightskyblue;" type="button" name="point" value=. onclick="calculator.out.value +='.'">
+                        </td>
+                        <td>
+                            <input style="background-color: lightskyblue;" type="button" name="zero" value=0 onclick="calculator.out.value +='0'">
+                        </td>
+                        <td>
+                            <input style="background-color: green;" type="button" name="equal" value="=" onclick="calculator.out.value=eval(calculator.out.value)">
+                        </td>
+                        <td>
+                            <input style="background-color:rgb(243, 4, 148);" type="button" name="div" value=/ onclick="calculator.out.value +='/'">
+                        </td>
+                    </tr>
+                </tr>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
